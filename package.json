@@ -5,21 +5,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/234AVELAR/ProyectoBackend.git"
-  },
   "keywords": [],
+  
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/234AVELAR/ProyectoBackend/issues"
-  },
-  "homepage": "https://github.com/234AVELAR/ProyectoBackend#readme",
   "description": "",
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.8",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "react": "^19.1.0"
   }
 }

@@ -1,17 +1,15 @@
-const express = require('express')
-const cors = require('cors') //limita acceso a los servicio(administrar los accesos al servicio)
-require('dotenv').config() //cargar las variables de entorno
+const expreess = require('express')
+const cors = require('cors')
 
-const app = express()
-app.use(cors()) //usar cors
-app.use(express.json()) //usar json
+require('dotenv').config()
+const app = expreess()
+app.use(cors())
+app.use(expreess.json())
+//Rutas
 
-//npm install dotenv cors express
-//npm start
+app.use('/api/auth', require('./routes/authRoutes'))
 
-//RUTAS
-const port = process.env.PORT || 3001 //PUERTO QUE VAMOS A USAR
-
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`)
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
+  console.log(`Servidor Corriendo en puerto : ${PORT}`)
 })
